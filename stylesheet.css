@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* Impiorts */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Open+Sans:300);
+
+/* Standard CSS Bullshit */
+html, body, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+body {
+	background-color: #fafafa;
+	font-family: "Ubuntu", sans-serif;
+	color: #111;
+	font-size: 14pt;
+}
+
+html {
+	margin: 10px;
+}
+
+.container {
+	max-width: 720px;
+	box-sizing: border-box;
+	padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+/* Edits */
+
+p {
+	margin-bottom: 10px;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: inherit;
+	transition: color 0.2s ease-out;
+}
+
+a:hover {
+	color: #444;
+}
+
+/* [CANCER INTENSIFIES] */
+
+@keyframes appear {
+	0%{transform:scale(1.3,1.3);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@-webkit-keyframes appear {
+	0%{transform:scale(1.3,1.3);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@keyframes appear2 {
+	0%{transform:scale(1.3,1.3);opacity:0;}
+	20%{transform:scale(1.3,1.3);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@-webkit-keyframes appear2 {
+	0%{transform:scale(1.3,1.3);opacity:0;}
+	20%{transform:scale(1.3,1.3);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@keyframes appear3 {
+	0%{transform:scale(1.3,1.3);opacity:0;}
+	40%{transform:scale(1.3,1.3);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+@-webkit-keyframes appear3 {
+	0%{transform:scale(1.3,1.3);opacity:0;}
+	40%{transform:scale(1.3,1.3);opacity:0;}
+	100%{transform:scale(1,1);opacity:1;}
+}
+
+/* Main stlye */
+
+.imgblock {
+	width: 236px;
+	height: 236px;
+	margin: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	background-image: url(http://www.gravatar.com/avatar/a06145d5003deb6147c52fbe00fb7bdd?s=200);
+		background-size: cover;
+		border-radius: 1000px;
+	animation: appear 0.8s ease-out;
+	box-shadow: 0px 0px 2px #111;
+	-webkit-animation: appear 0.8s ease-out;
+	transition: transform 0.1s ease-out;
+}
+
+.imgblock:hover {
+	transform: scale(1.1,1.1);
+	box-shadow: 0px 0px 4px #111;
+}
+
+.header {
+	color: #222;
+	font-size: 150%;
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: 10px;
+	animation: appear 0.4s ease-out;
+	-webkit-animation: appear 0.4s ease-out;
+}
+
+.content {
+	animation: appear2 0.6s ease-out;
+	-webkit-animation: appear2 0.6s ease-out;
+}
+
+.social {
+	color: #111;
+	box-sizing: border-box;
+	padding: 3px;
+	transition: color 0.2s ease-out;
+}
+
+.social:hover {
+	color: #444;
+}
+
+.large {
+	font-size: 200%;
+	/* Oh god */
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
